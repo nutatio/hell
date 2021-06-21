@@ -3,97 +3,64 @@
   <link rel="stylesheet" href="Simple.css"></link> 
 </head>
 <body>
-  <h2 class="mah2">THE HELL CHESS TOURNAMENT 1.0</h2>
-  <nav>
-    <a href="#FAQ">FAQ</a>
-    <a href="#Brakets">Brakets</a>
-  </nav>
-  <details id="FAQ">
-    <summary>Как зарегистрироваться на турнир?</summary>
-    <p>Нужно заполнить 
-      <a href="https://forms.gle/ip12pr28WiHS3v8e9">форму</a>
-      (если не работает https://forms.gle/ip12pr28WiHS3v8e9)
-    </p>  
-  </details>
-
-  <details>
-    <summary>Как будет проходить турнир?</summary>
-    <p>Будет система побед и поражений, участник, 
-    который выиграл большее количество партий занимает первое место.(ого)</p>  
-  </details>
-  
-  <details>
-    <summary>Почему игра еще не засчиталась?</summary>
-    <p>Организация турнира обновляет данные до 1 дня</p>  
-  </details>
-
-  <h4>Результаты THE HELL CHESS TOURNAMENT 1.0</h4>
-  <table id="Brakets">
-    <thead>
-      <th>Имя\Ник</th>
-      <th>Победы</th>
-      <th>Поражения</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td><mark>player1</mark></td>
-        <td><mark>0</mark></td>
-        <td><mark>0</mark></td>
-      </tr>
-      
-      <tr>
-        <td>player2</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td>player3</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td>player4</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-
-    </tbody>
-  </table>
-<!--
-  <img alt="froggin" src="https://bit.ly/3xzxbyD"/>
-  <img alt="froggin" src="https://bit.ly/3xzxbyD"/>
--->
-  <img alt="жека зашла в дискорд" 
-  src="https://media.discordapp.net/attachments/372059999779946497/855549099814158356/image.png" 
-  />
-  <figcaption>жека зашла в дискорд</figcaption>
-  
-  <footer>
-    <p>
-      Tournament was made by discord server THE HELL
-    </p>
-  </footer>
+  <div class="MyDiv">
+    <a href="1.0/index.html" style="width: 100%;">
+      <div class="box">
+        <img alt="the hell logo" 
+        src="https://bit.ly/2Sc57lM" 
+        class="myIcon"
+        />
+        <h2 
+        style="
+        margin: 0.5%;
+        ">
+          THE HELL CHESS TOURNAMENT 1.0</h2> 
+      </div>
+    </a> 
+  </div>
 </body>
 
 <style>
-  .mah2 {
-    padding-left: 30px;
-    background-image: url("https://bit.ly/2Sc57lM");
-    background-position: left center;
-    background-size: 40px 40px;
-    background-repeat: no-repeat;
+  a {
+    text-decoration: none;
+    margin: 0;
+  }
+  a:hover {
+    
+  color:lightcoral;
+  }
+  .MyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 99%;
+  }
+  .myIcon {
+  opacity: 1;
+  height: 90px;
+  width: 90px; 
+  margin-right: 0.5%;
+  margin-bottom: 0;
+  }
+  .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  width: 100%;
   }
   img {
     margin-bottom: 10px;
   }
   h2 {
-    margin-top: auto;
-    margin-bottom: auto;
     display: flex;
     align-items: center; /*центрирование по верт*/
     justify-content: center;/*центрирование по гориз*/
+  }
+  html, body {
+    height: 100%;
   }
 </style>
 
