@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <head> 
   <link rel="stylesheet" href="Simple.css"></link> 
+  
 </head>
 <body>
   <h2 class="mah2">THE HELL CHESS TOURNAMENT 1.0</h2>
+   
   <nav>
     <a href="../">Home</a>
     <a href="#FAQ">FAQ</a>
     <a href="#Brakets">Brakets</a>
   </nav>
+  
+  <img alt="froggin" src="https://bit.ly/3xzxbyD"/>
+  <figcaption>froggin</figcaption>
+  
+  <script type="text/javascript">var submitted=false;</script>
+ 
+  <iframe id="hidden_iframe" name="hidden_iframe" onload="submitted&&(window.location='https://nutatio.github.io/hell/chess/')" style="display:none"></iframe>
+
+  
+
   <details id="FAQ">
     <summary>Как зарегистрироваться на турнир?</summary>
-    <p>Нужно заполнить 
-      <a href="https://forms.gle/ip12pr28WiHS3v8e9">форму</a>
-      (если не работает https://forms.gle/ip12pr28WiHS3v8e9)
+    <p>
+    <form class="form" 
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdYGENopTEb5tQVO-XfnIHiL-mTtNOe4-Lwa17UQQ2cDzQ6uQ/formResponse"
+      method="post" target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+    <label>Напишите свой ник или имя</label>
+    <input name="entry.515487578" type="text" />
+
+    <input type="submit" value="Send" />
+
+  </form>
     </p>  
   </details>
 
@@ -22,50 +43,34 @@
     <p>Будет система побед и поражений, участник, 
     который выиграл большее количество партий занимает первое место.(ого)</p>  
   </details>
+
+  <details>
+    <summary>Когда будет проходить турнир?</summary>
+    <p>ориентировочно в этом году</p>  
+  </details>
   
   <details>
     <summary>Почему игра еще не засчиталась?</summary>
     <p>Организаторы турнира обновляют данные до 1 дня</p>  
   </details>
 
-  <h4>Результаты THE HELL CHESS TOURNAMENT 1.0</h4>
-  <table id="Brakets">
-    <thead>
-      <th>Имя\Ник</th>
-      <th>Победы</th>
-      <th>Поражения</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td><mark>Жужа</mark></td>
-        <td><mark>0</mark></td>
-        <td><mark>0</mark></td>
-      </tr>
-      
-      <tr>
-        <td>player2</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td>player3</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      
-      <tr>
-        <td>player4</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
+  <h4>Участники THE HELL CHESS TOURNAMENT 1.0</h4>
+  <div class="table" id="Brakets">
+    <table></table>
+  </div>
 
-    </tbody>
-  </table>
-<!--
-  <img alt="froggin" src="https://bit.ly/3xzxbyD"/>
-  <img alt="froggin" src="https://bit.ly/3xzxbyD"/>
--->
+    <script src=//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+    <script>
+        function importGSS(t) {
+        $.each(t.feed.entry.slice(-10), function() {
+            $("table").addClass("flex-container").prepend("<tr><td>" + this.gsx$name.$t + "</td></tr>")
+        }), $("table").addClass("flex-container").prepend("<tr><th>Имя</th></tr>")
+    }
+    </script>
+    <script src="https://spreadsheets.google.com/feeds/list/1-7yuHLW_w89vDeAYprUmS8BK0cjh1J4kX4C1WKq4PWY/1/public/values?alt=json-in-script&callback=importGSS" async></script>
+    </div>
+  
+
   <img alt="жека зашла в дискорд" 
   src="https://media.discordapp.net/attachments/372059999779946497/855549099814158356/image.png" 
   />
@@ -79,6 +84,7 @@
 </body>
 
 <style>
+ 
   .mah2 {
     padding-left: 30px;
     background-image: url("https://bit.ly/2Sc57lM");
@@ -93,9 +99,40 @@
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
-    align-items: center; /*центрирование по верт*/
-    justify-content: center;/*центрирование по гориз*/
+    align-items: center; 
+    justify-content: center;
   }
 </style>
+
+<script> 
+  (function() { 
+    var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; 
+    if(!gi.call(d,id)) { js=ce.call(d,"script");
+      js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) 
+    } 
+  })() 
+  (function() {
+    var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; 
+    if(!gi.call(d,id)){ 
+      
+      js=ce.call(d,"script"); 
+      js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) 
+    } 
+  })() 
+
+  (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
+
+</script>
+
+<script type='text/javascript'>
+  (function() {
+    function init() {var scr = document.createElement('script'); scr.type = 'text/javascript'; scr.defer = 'defer'; scr.src = '//cdn.qform24.com/forms.js?v=' + parseInt(new Date().getTime()/1000); var scrInsert = document.getElementsByTagName('script')[0]; scrInsert.parentNode.insertBefore(scr, scrInsert); }
+    var d = document; var w = window;
+    if (d.readyState == 'complete') {init(); } else {if (w.attachEvent) {w.attachEvent('onload', init); } else {w.addEventListener('load', init, false); } } })();
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 
 </html>
