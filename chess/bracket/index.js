@@ -1,9 +1,21 @@
 let bracketToggle = document.getElementById('btn-change');
 let bracket = document.getElementById('bracket');
 let otherBracket = document.getElementById('otherBracket');
+
+let grandButtonToggle = document.getElementById('btn-grand')
+let grandBracket = document.getElementById('grandFinal');
+let notGrandBracket = document.getElementById('notGrandFinal');
+if(grandButtonToggle){
+  console.log();
+  grandButtonToggle.addEventListener('click', function(e){
+    e.preventDefault();
+    notGrandBracket.hasAttribute("hidden") ? notGrandBracket.removeAttribute("hidden") : notGrandBracket.setAttribute("hidden","enabled");
+    grandBracket.hasAttribute("hidden") ? grandBracket.removeAttribute("hidden")  : grandBracket.setAttribute("hidden","enabled");
+  })
+}
+
 if(bracketToggle){
-  console.log("catch");
-  bracketToggle.addEventListener('click', function(e){
+    bracketToggle.addEventListener('click', function(e){
   e.preventDefault();
   bracket.classList.toggle('active');
   otherBracket.classList.toggle('active');
@@ -45,5 +57,11 @@ function importGSS(t) {
   }),
   $.each(t.feed.entry.slice(1,2), function(){
     $("loser2").addClass("flex-container").prepend("<span>" + this.gsx$loser.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(0,1), function(){
+    $("grand1").addClass("flex-container").prepend("<span>" + this.gsx$grand.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(1,2), function(){
+    $("grand2").addClass("flex-container").prepend("<span>" + this.gsx$grand.$t + "</span>")
   })
 }

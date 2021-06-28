@@ -11,6 +11,12 @@ body {
 .ul.active { 
   visibility: visible;
 }
+.al {
+  visibility: hidden;
+}
+.al.active {
+  visibility: visible;
+}
 .my-button { 
   appearance: none;
   border: 0;
