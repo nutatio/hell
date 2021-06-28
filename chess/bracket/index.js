@@ -5,10 +5,12 @@ let otherBracket = document.getElementById('otherBracket');
 let grandButtonToggle = document.getElementById('btn-grand')
 let grandBracket = document.getElementById('grandFinal');
 let notGrandBracket = document.getElementById('notGrandFinal');
+
 if(grandButtonToggle){
   console.log();
   grandButtonToggle.addEventListener('click', function(e){
     e.preventDefault();
+    grandButtonToggle.classList.toggle("active");
     notGrandBracket.hasAttribute("hidden") ? notGrandBracket.removeAttribute("hidden") : notGrandBracket.setAttribute("hidden","enabled");
     grandBracket.hasAttribute("hidden") ? grandBracket.removeAttribute("hidden")  : grandBracket.setAttribute("hidden","enabled");
   })
@@ -21,6 +23,8 @@ if(bracketToggle){
   otherBracket.classList.toggle('active');
 });
 }
+
+
 function importGSS(t) {
   $.each(t.feed.entry.slice(0,1), function() {
     $("booba1").addClass("flex-container").prepend("<span>" + this.gsx$semiwinner.$t + "</span>")

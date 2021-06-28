@@ -30,6 +30,9 @@ body {
 .my-button:hover {
   background: lightcoral;
 }
+.my-button.active {
+  background: lightcoral;
+}
 .bracket {
   display: inline-block;
   position: absolute;
