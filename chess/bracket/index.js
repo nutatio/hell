@@ -45,6 +45,18 @@ function importGSS(t) {
     $("abooba2").addClass("flex-container").prepend("<span>" + this.gsx$winner.$t + "</span>")
   }),
   $.each(t.feed.entry.slice(0,1), function(){
+    $("semiSemiLoser1").addClass("flex-container").prepend("<span>" + this.gsx$semisemiloser.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(1,2), function(){
+    $("semiSemiLoser2").addClass("flex-container").prepend("<span>" + this.gsx$semisemiloser.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(2,3), function(){
+    $("semiSemiLoser3").addClass("flex-container").prepend("<span>" + this.gsx$semisemiloser.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(3,4), function(){
+    $("semiSemiLoser4").addClass("flex-container").prepend("<span>" + this.gsx$semisemiloser.$t + "</span>")
+  }),
+  $.each(t.feed.entry.slice(0,1), function(){
     $("semiLoser1").addClass("flex-container").prepend("<span>" + this.gsx$semiloser.$t + "</span>")
   }),
   $.each(t.feed.entry.slice(1,2), function(){

@@ -118,6 +118,28 @@ flex-direction: column;
         <div class="matchups">
           <div class="matchup">
             <div class="participants">
+              <div class="participant winner"><semiSemiLoser1></semiSemiLoser1></div>
+              <div class="participant"><semiSemiLoser2></semiSemiLoser2></div>
+            </div>
+          </div>
+          <div class="matchup">
+            <div class="participants">
+              <div class="participant winner"><semiSemiLoser3></semiSemiLoser3></div>
+              <div class="participant"><semiSemiLoser4></semiSemiLoser4></div>
+            </div>
+          </div>
+        </div>
+        <div class="connector">
+          <div class="lmao" style="border-top-width: thin;"></div>
+          <div class="lmao" style="border-bottom-width: thin;"></div>
+        </div>
+      </div>
+    </section>
+    <section class="round quarterfinals">
+      <div class="winners">
+        <div class="matchups">
+          <div class="matchup">
+            <div class="participants">
               <div class="participant winner"><semiLoser1></semiLoser1></div>
               <div class="participant"><semiLoser2></semiLoser2></div>
             </div>
@@ -145,7 +167,6 @@ flex-direction: column;
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   </div> 
@@ -171,7 +192,16 @@ flex-direction: column;
 <script type="text/javascript" src="index.js"></script>
 </body>
 
-
-
+<style>
+.lmao {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 64px;
+  border: 0 solid;
+  border-color: #c0c0c8; 
+}
+</style>
 
 </html>
