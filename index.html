@@ -2,7 +2,8 @@
 <head> 
   <link rel="stylesheet" href="Simple.css"></link> 
   <link rel="shortcut icon" href="celeste_biggest_thing_icon_32.png" type="image/x-icon">
-  <title>hell</title>
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <title>hell</title> 
 </head>
 <body>
   <div class="MyDiv">
@@ -19,10 +20,58 @@
           THE HELL CHESS TOURNAMENT 1.0</h2> 
       </div>
     </a> 
+    <h4>Next Round</h4>
+    <div class="container">
+     
+      <div class="round">
+        <div class="player1 player">
+          <player1></player1>
+        </div> 
+        <span>:</span>  
+        <div class="player2 player">
+          <player2></player2>
+        </div>
+      </div>
+    </div>
   </div>
+ 
 </body>
 
+<script src="https://spreadsheets.google.com/feeds/list/137kLlczdKGvdrR-ZnR3kXXvC5q-zAtm48wHQKMbM63g/1/public/values?alt=json-in-script&callback=importGSS" async></script>
+<script type="text/javascript" src ="script.js"></script>
+
 <style>
+  .container {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px sandybrown;
+    height: 100px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .player {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    border-radius: 4px;
+    padding: 5%;
+    margin: 5%;
+    width: 175px;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    word-break: keep-all;
+  }
+  .round {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   a {
     text-decoration: none;
     margin: 0;
