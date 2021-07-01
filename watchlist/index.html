@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../Simple.css"></link>
+  <link rel="shortcut icon" href="beer.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js" 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+  crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <h2>THE HELL WATCHLIST</h2>
+  <div class="cards">
+    <div class="film card">
+      <a href="chess/" class="filmlink">
+        <h2>Пятничный Кинц</h2>
+        <img alt="poster"  
+        src=""
+        class="filmposter"
+        />
+      </a>
+      <figcaption><filmtitle></filmtitle></figcaption>
+    </div>
+    <div class="serial card">
+      <a href="chess/" class="seriallink">
+        <h2>Cубботный Серик</h2>
+        <img alt="poster"  
+        src=""
+        class="serialposter"
+        />
+      </a>
+      <figcaption><serialtitle></serialtitle></figcaption>
+    </div>
+    <div class="anime card">
+      <a href="chess/" class="animelink">
+        <h2>Воскресный Грех</h2>
+        <img alt="poster"  
+        src=""
+        class="animeposter"
+        />
+      </a>
+      <figcaption><animetitle></animetitle></figcaption>
+    </div>
+  </div>
+  <a href="../"><h2>go back</h2></a>
+</body>
+
+<script src="https://spreadsheets.google.com/feeds/list/1Gz4Te1BV1SAt4gY0C6HyU3fSvIQKcjN8j-wnu2X0s3w/1/public/values?alt=json-in-script&callback=importGSS" async></script>
+<script type="text/javascript" src="script.js"></script>
+
+<style>
+  a {
+    text-decoration: none;
+    margin: 0;
+  }
+  a:hover {
+    
+  color:lightcoral;
+  }
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    width: 100%;
+    
+  }
+  .card {
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px sandybrown;
+    margin-right: 2%;
+    padding: 0  20px 0 20px;
+    align-items: center;
+    justify-content: center;
+    word-break: keep-all;
+    width: auto;
+    height: auto;
+    
+  }
+  .card:hover{
+    box-shadow: 0 2px 10px lightcoral;
+  }
+  .card img {
+    opacity: .9;
+    max-width: none;
+    height: 400px;
+  }
+  .card h2{
+    font-size: 3vh;
+  }
+  .MyDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 99%;
+  }
+  .myIcon {
+  opacity: 1;
+  height: 90px;
+  width: 90px; 
+  margin-right: 0.5%;
+  margin-bottom: 0;
+  }
+  .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  width: 100%;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+  h2 {
+    display: flex;
+    align-items: center; /*центрирование по верт*/
+    justify-content: center;/*центрирование по гориз*/
+    color: sandybrown;
+  }
+  html, body {
+    height: 100%;
+  }
+</style>
+
+</html>
