@@ -47,20 +47,78 @@
       <figcaption><animetitle></animetitle></figcaption>
     </div>
   </div>
-  <a href="../"><h2>go back</h2></a>
+  <a href="../" class="back">
+    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="triangles" clip-path="url(#clip0)">
+      <g id="lightGroup">
+      <path id="light1" opacity="0.8" d="M73 52.2321C71.6667 51.4623 71.6667 49.5377 73 48.7679L108.25 28.4164C109.583 27.6466 111.25 28.6088 111.25 30.1484V70.8516C111.25 72.3912 109.583 73.3534 108.25 72.5836L73 52.2321Z"/>
+      </g>
+      <g id="darkGroup">
+      <path id="dark2" opacity="0.8" d="M58 53.2321C56.6667 52.4623 56.6667 50.5377 58 49.7679L93.25 29.4164C94.5833 28.6466 96.25 29.6088 96.25 31.1484V71.8516C96.25 73.3912 94.5833 74.3534 93.25 73.5836L58 53.2321Z"/>
+      <path id="dark1" opacity="0.8" d="M73 52.2321C71.6667 51.4623 71.6667 49.5377 73 48.7679L108.25 28.4164C109.583 27.6466 111.25 28.6088 111.25 30.1484V70.8516C111.25 72.3912 109.583 73.3534 108.25 72.5836L73 52.2321Z"/>
+      </g>
+      </g>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="120" height="100" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+  </a>    
+
 </body>
 
 <script src="https://spreadsheets.google.com/feeds/list/1Gz4Te1BV1SAt4gY0C6HyU3fSvIQKcjN8j-wnu2X0s3w/1/public/values?alt=json-in-script&callback=importGSS" async></script>
 <script type="text/javascript" src="script.js"></script>
 
 <style>
+  :root{
+    --dark-color: #F3A460;
+    --light-color: #F08080;
+  }
+
+  svg{
+    cursor: pointer;
+  }
+
+  #darkGroup {
+    fill: var(--dark-color);
+  }  
+  
+  #lightGroup {
+    fill: var(--light-color);
+  }
+
+  #dark1,
+  #light,
+  #dark2 {
+    transition: all 1s ease;
+  }
+  #dark2 {
+    transform: translateX(100%);
+  }
+  svg:hover #light1 {
+    transform: translateX(-20%);
+  }
+  svg:hover #dark1 {
+    transform: translateX(-40%);
+    opacity: 0;
+  }
+  svg:hover #dark2 {
+    transform: translateX(0%);
+  }
+
   a {
     text-decoration: none;
     margin: 0;
   }
   a:hover {
-    
   color:lightcoral;
+  }
+  a.back{
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .cards{
     display: flex;
@@ -86,6 +144,9 @@
   .card:hover{
     box-shadow: 0 2px 10px lightcoral;
   }
+  .card:hover h2 {
+    color: var(--light-color);
+  }
   .card img {
     opacity: .9;
     max-width: none;
@@ -94,6 +155,7 @@
   .card h2{
     font-size: 3vh;
   }
+  
   .MyDiv {
     display: flex;
     flex-direction: column;
