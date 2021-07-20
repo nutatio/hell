@@ -139,3 +139,11 @@ body {
 .bracket .round.finals .winners .connector .line {
   height: 1.5rem;
 }
+.header {
+  color:#D8DAE1; 
+  display: flex;
+  align-self:center; 
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
